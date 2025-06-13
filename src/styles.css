@@ -107,11 +107,11 @@ header {
 .menuDiv {
     max-width: 100%;
     min-width: none;
-    height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 50px;
 }
 
 .item {
@@ -123,14 +123,15 @@ header {
         );
     box-sizing: border-box;
     height: auto;
-    width: 220px;
+    width: 300px;
     color: rgb(0, 0, 0);
     display: grid;
-    grid-template-rows: 140px 1fr 2fr 1fr;
+    grid-template-rows: 240px 1fr 2fr 1fr;
     justify-items: center;
     text-align: center;
     border-radius: 20px;
     margin: 20px;
+    font-size: 1.3rem;
 
 }
 .itemPicture img {
@@ -142,7 +143,7 @@ header {
     text-align: center;
     align-self: start;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .itemIngredients {
     
@@ -163,9 +164,6 @@ header {
     scale: 1.1;
 }
 /* Contact page */
-.contactDiv {
-
-}
 .topDiv {
     background:
         linear-gradient(
@@ -174,6 +172,7 @@ header {
         ),
         url('./assets/contactBackground2.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: 60vh;
