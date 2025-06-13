@@ -105,13 +105,14 @@ header {
 
 /* Menu screen styling */
 .menuDiv {
-    max-width: 100%;
+    max-width: 80%;
     min-width: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-bottom: 50px;
+    justify-self: center;
 }
 
 .item {
@@ -123,10 +124,10 @@ header {
         );
     box-sizing: border-box;
     height: auto;
-    width: 400px;
+    width: 350px;
     color: rgb(0, 0, 0);
     display: grid;
-    grid-template-rows: 340px 1fr 2fr 1fr;
+    grid-template-rows: 250px 1fr 2fr 1fr;
     justify-items: center;
     text-align: center;
     border-radius: 20px;
