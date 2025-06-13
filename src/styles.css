@@ -1,0 +1,338 @@
+:root {
+    --main-background-color: rgb(209, 230, 247);
+    --header-background-color: rgb(255, 255, 255);
+    --nav-buttons-background-color: rgb(255, 255, 255);
+    --nav-button-text-color: rgb(170, 79, 0);
+    --home-screen-text-color: rgb(255, 255, 255);
+    --background-menu-color: rgb(198, 153, 86);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    /* margin-bottom: 5px; */
+    position: fixed;
+    padding: 0;
+    top: 0;
+    
+}
+.navButton {
+    background-color: var(--nav-buttons-background-color);
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.6), 
+            rgba(255, 255, 255, 0.6)
+        );
+    color: var(--nav-button-text-color);
+    font-weight: 900;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    transition: 300ms;
+    margin: 0px 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+.navButton:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+/* Home screen styling */
+#content {
+    padding-top: 8vh;
+}
+.homeScreenDiv {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: var(--home-screen-text-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.6)
+        ),
+        url('./assets/hard-shell-tacos.jpg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+}
+.message {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.historyDiv {
+    height: 300px;
+    background-color: white;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.historyMessage {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20%;
+}
+.historyPicture {
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+.historyPic {
+    width: 100%;
+    border-radius: 10%;
+}
+
+/* Menu screen styling */
+.menuDiv {
+    max-width: 100%;
+    min-width: none;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item {
+    background-color: rgb(247, 247, 247);
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.7), 
+            rgba(255, 255, 255, 0.7)
+        );
+    box-sizing: border-box;
+    height: auto;
+    width: 220px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: 140px 1fr 2fr 1fr;
+    justify-items: center;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+
+}
+.itemPicture img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.itemName {
+    text-align: center;
+    align-self: start;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.itemIngredients {
+    
+}
+.itemPrice {
+    font-weight: bold;
+}
+
+.orderItemButton {
+    height: 30px;
+    width: 80px;
+    background-color: orange;
+    border-radius: 10px;
+    
+}
+.orderItemButton:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+/* Contact page */
+.contactDiv {
+
+}
+.topDiv {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+        ),
+        url('./assets/contactBackground2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9rem;
+}
+.addressDiv {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.emailPhoneDiv {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+.socialsDiv {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.iconsDiv {
+    display: flex;
+    justify-content: space-around;
+}
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+.socialsDiv img {
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    height: 40px;
+}
+.socialsDiv img:hover {
+    transform: scale(1.3);
+}
+
+.bookTableButton {
+    border: solid 2px white;
+    width: 100%;
+    height: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    background-color: transparent;
+    color: white;
+}
+.bookTableButton:hover {
+    color: black;
+    background-color: white;
+}
+
+.bottomDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.formHeaderDiv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+
+/* Form styling */
+.formDiv {
+    display: flex;
+    justify-content: center;
+}
+.contactForm {
+    justify-self: center;
+    width: 80%;
+    padding: 50px;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formRow {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+#formRow1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.formRow input {
+    border: none;
+    border-bottom: solid 1px black;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.formRow label {
+    margin-bottom: 15px;
+}
+#name {
+    width: 80%;
+}
+#phone {
+    width: 100%;
+}
+input,label {
+    display: flex;
+    flex-direction: column;
+}
+.nameDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.phoneDiv {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.formButton {
+    width: 150px;
+    height: 50px;
+    border: solid 4px black;
+    background-color: transparent;
+    align-self: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.formButton:hover {
+    background-color: black;
+    color: white;
+}
+
+
